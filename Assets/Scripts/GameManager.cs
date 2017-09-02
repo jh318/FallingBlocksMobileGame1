@@ -55,12 +55,20 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void StartGameTouch(){
+		SceneManager.LoadScene("GameScene");
+	}
+
 	private void GameOverToStart(){
 		if(Input.GetKeyDown(KeyCode.Space)){
 			if(SceneManager.GetActiveScene().name == "GameOverScene"){
 				SceneManager.LoadScene("StartScene");
 			}
 		}
+	}
+
+	public void GameOverToStartTouch(){
+		SceneManager.LoadScene("StartScene");
 	}
 
 	
