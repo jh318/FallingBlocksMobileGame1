@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour {
 
 	public void ResetGame(){
-		Debug.Log("FuckMe");
 		SceneManager.LoadScene("StartScene");
 	}
 }

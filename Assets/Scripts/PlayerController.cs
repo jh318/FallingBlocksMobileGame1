@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour {
 			Ray r = Camera.main.ScreenPointToRay(t.position);
 			RaycastHit2D hit = Physics2D.GetRayIntersection(r);
 			if (hit.collider != null && hit.collider.gameObject.CompareTag("Player")){
-				Debug.Log("Playerhit");
 				touched = true;
 			}
 		}
